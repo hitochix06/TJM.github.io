@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!-- importe boostrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha385-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- importe lien  de icon de boostrap 5  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- importe la police avec lien internet  -->
+
+
+  <!-- importe le fichier css  -->
+  <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+  <h1 class=" presentation text-center"> Simulateur de calcul du TJM</h1>
+
+  <section class="estimation">
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-md-6 col-sm-8 col-lg-3">
+          <div class="card bg-success couleur">
+            <div class="card-body">
+              <h1 class="card-title ">Votre TJM conseillé</h1>
+              <div class="container p-3">
+                <div class="shadow p-3 bg-body rounded">
+                  <div class="text-center">
+                    <div class="afficheResulta">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="formulaire">
+    <div class="container p-5">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="inputSalaire" class="form-label">La somme du salaire</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="inputSalaire" placeholder="La somme du salaire">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-currency-euro"></i></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="inputImpots" class="form-label">Impôts/Charge sociales</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="inputImpots" placeholder="Impôts/Charge sociales">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-currency-euro"></i></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="coutSuppl" class="form-label">Cout supplémentaire /mois</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="coutSuppl" placeholder="Cout supplémentaire /mois">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-currency-euro"></i></span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="baseJour" class="form-label">Base Jours ouvrés /mois</label>
+          <input type="number" class="form-control" id="baseJour" placeholder="Base Jours ouvrés /mois">
+        </div>
+        <div class="d-grid gap-2 col-2 mx-auto">
+          <button type="button" id="boutonValide" class="btn btn-outline-primary">Valider</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+  <script type="text/javascript" src="assets/scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
